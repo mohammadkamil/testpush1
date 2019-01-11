@@ -16,7 +16,7 @@
         document.addEventListener( 'pause', onPause.bind( this ), false );
         document.addEventListener('resume', onResume.bind(this), false);
         document.addEventListener("backbutton", onBackKeyDown, false);
-        
+        push();
         //myDB.transaction(function (transaction) {
         //    transaction.executeSql('CREATE TABLE IF NOT EXISTS userinfo (userinfo_ID integer primary key,user_ID text, userType text, email text, password text, pelapor_IC text, pelapor_nama text, alamat text, gambar text, kaum text, agama text)', [],
         //        function (tx, result) {
