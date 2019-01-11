@@ -1,0 +1,30 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "lznk.jejak.asnak"
+    },
+    "phonegap-plugin-push": {
+      "PACKAGE_NAME": "lznk.jejak.asnak"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "lznk.jejak.asnak"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "lznk.jejak.asnak"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "lznk.jejak.asnak"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "lznk.jejak.asnak"
+    }
+  },
+  "dependent_plugins": {}
+}
