@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "602233247386",
+    "firebase_url": "https://jejak-asnaf-228307.firebaseio.com",
+    "project_id": "jejak-asnaf-228307",
+    "storage_bucket": "jejak-asnaf-228307.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602233247386:android:e878531777a4bdc0",
+        "android_client_info": {
+          "package_name": "com.test.push"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602233247386-fdkidc864mrrs183r0tvp5lo9pbfp0v5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnbi5rxDTi8nroxFdFPg043rUc52BUizU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602233247386:android:fdd56f3d52129c6f",
+        "android_client_info": {
+          "package_name": "lznk.jejak.asnaf2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602233247386-fdkidc864mrrs183r0tvp5lo9pbfp0v5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnbi5rxDTi8nroxFdFPg043rUc52BUizU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
