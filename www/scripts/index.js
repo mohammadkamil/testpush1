@@ -2,48 +2,7 @@
 // http://go.microsoft.com/fwlink/?LinkID=397704
 // To debug code on page load in cordova-simulate or on Android devices/emulators: launch your app, set breakpoints, 
 // and then run "window.location.reload()" in the JavaScript Console.
-var push = PushNotification.init({
-    "android": {
-        "senderID": "602233247386"
-    },
-    "browser": {},
-    "ios": {
-        "sound": true,
-        "vibration": true,
-        "badge": true
-    },
-    "windows": {}
-});
-alert(2);
-console.log('after init');
-
-push.on('registration', function (data) {
-    console.log('registration event: ' + data.registrationId);
-    alert(data.registrationId);
-    var oldRegId = localStorage.getItem('registrationId');
-    if (oldRegId !== data.registrationId) {
-        // Save new registration ID
-        localStorage.setItem('registrationId', data.registrationId);
-        // Post registrationId to your app server as the value has changed
-    }
-
-
-});
-
-push.on('error', function (e) {
-    alert(e.message);
-    console.log("push error = " + e.message);
-});
-
-push.on('notification', function (data) {
-    console.log('notification event');
-    navigator.notification.alert(
-        data.message,         // message
-        null,                 // callback
-        data.title,           // title
-        'Ok'                  // buttonName
-    );
-});       
+    
 (function () {
     "use strict";
 
@@ -79,6 +38,51 @@ push.on('notification', function (data) {
         // TODO: Cordova has been loaded. Perform any initialization that requires Cordova here.
 
     };
+	function push(){
+		var push = PushNotification.init({
+    "android": {
+        "senderID": "602233247386"
+    },
+    "browser": {},
+    "ios": {
+        "sound": true,
+        "vibration": true,
+        "badge": true
+    },
+    "windows": {}
+});
+console.log('after init');
+
+push.on('registration', function (data) {
+	alert(1);
+    console.log('registration event: ' + data.registrationId);
+    alert(data.registrationId);
+    var oldRegId = localStorage.getItem('registrationId');
+    if (oldRegId !== data.registrationId) {
+        // Save new registration ID
+        localStorage.setItem('registrationId', data.registrationId);
+        // Post registrationId to your app server as the value has changed
+    }
+
+
+});
+
+push.on('error', function (e) {
+	alert(111);
+    alert(e.message);
+    console.log("push error = " + e.message);
+});
+
+push.on('notification', function (data) {
+    console.log('notification event');
+    navigator.notification.alert(
+        data.message,         // message
+        null,                 // callback
+        data.title,           // title
+        'Ok'                  // buttonName
+    );
+});   
+	}
     function semak() {
         location.href = "semakStatus.html";
     }; function laporan() {
