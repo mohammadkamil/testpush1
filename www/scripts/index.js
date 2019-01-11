@@ -17,10 +17,41 @@ var push;
         document.addEventListener( 'pause', onPause.bind( this ), false );
         document.addEventListener('resume', onResume.bind(this), false);
         document.addEventListener("backbutton", onBackKeyDown, false);
-       FCMPlugin.onTokenRefresh(function(token){
-    alert( token );
-});FCMPlugin.getToken(function(token){
-    alert(token);
+      var push = PushNotification.init({
+  "android": {
+    "senderID": "602233247386"
+  },
+  "browser": {},
+  "ios": {
+    "sound": true,
+    "vibration": true,
+    "badge": true
+  },
+  "windows": {}
+});
+		push.on('registration', function(data) {
+  console.log('registration event: ' + data.registrationId);
+alert(data.registrationId);
+  var oldRegId = localStorage.getItem('registrationId');
+  if (oldRegId !== data.registrationId) {
+    // Save new registration ID
+    localStorage.setItem('registrationId', data.registrationId);
+    // Post registrationId to your app server as the value has changed
+  }
+
+
+});
+		push.on('error', function(e) {
+  console.log("push error = " + e.message);
+});
+		push.on('notification', function(data) {
+  console.log('notification event');
+  navigator.notification.alert(
+    data.message,         // message
+    null,                 // callback
+    data.title,           // title
+    'Ok'                  // buttonName
+  );
 });
         //myDB.transaction(function (transaction) {
         //    transaction.executeSql('CREATE TABLE IF NOT EXISTS userinfo (userinfo_ID integer primary key,user_ID text, userType text, email text, password text, pelapor_IC text, pelapor_nama text, alamat text, gambar text, kaum text, agama text)', [],
