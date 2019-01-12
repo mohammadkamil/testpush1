@@ -36,5 +36,6 @@
     <Capabilities>
         <Capability Name="internetClientServer" />
         <DeviceCapability Name="webcam" />
+        <DeviceCapability Name="location" />
     </Capabilities>
 </Package>

@@ -58,6 +58,7 @@
 		E0B9BABF01F347BC90FA3609 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1648D329DA1A479FA2626C79 /* AddressBook.framework */; };
 		1056E2B9521745F3AB829C8E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 420A5F34D441432A9F73BFA0 /* libsqlite3.tbd */; };
 		5DFA579AE0AC463796602654 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 43ADCCF645F649859B86CECD /* libz.tbd */; };
+		2581C25D0B45456E84B52BDB /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CCB70A32014433B8CD1D8F /* CDVLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +167,8 @@
 		1648D329DA1A479FA2626C79 /* AddressBook.framework */ = {isa = PBXFileReference; name = "AddressBook.framework"; path = "System/Library/Frameworks/AddressBook.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		420A5F34D441432A9F73BFA0 /* libsqlite3.tbd */ = {isa = PBXFileReference; name = "libsqlite3.tbd"; path = "usr/lib/libsqlite3.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
 		43ADCCF645F649859B86CECD /* libz.tbd */ = {isa = PBXFileReference; name = "libz.tbd"; path = "usr/lib/libz.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
+		87CCB70A32014433B8CD1D8F /* CDVLocation.m */ = {isa = PBXFileReference; name = "CDVLocation.m"; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		071E787B8E164242B8FFCD1C /* CDVLocation.h */ = {isa = PBXFileReference; name = "CDVLocation.h"; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -369,6 +372,8 @@
 				8608BED2E6784B019F9EF375 /* GCMReceiverDelegate.h */,
 				DE8ADCDFBF85466785890DA1 /* GCMService.h */,
 				AE1D5CF1264549099E545B4F /* GoogleCloudMessaging.h */,
+				87CCB70A32014433B8CD1D8F /* CDVLocation.m */,
+				071E787B8E164242B8FFCD1C /* CDVLocation.h */,
 			);
 			name = Plugins;
 			path = "Jejak Asnaf/Plugins";
@@ -491,6 +496,7 @@
 				7DF2DC57E55F47FF8F0CEAFF /* CDVViewController+SplashScreen.m in Sources */,
 				D983D323599A46419FC6E060 /* AppDelegate+notification.m in Sources */,
 				73CD385A161B4394BB1D36E7 /* PushPlugin.m in Sources */,
+				2581C25D0B45456E84B52BDB /* CDVLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

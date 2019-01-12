@@ -22,6 +22,9 @@
     "phonegap-plugin-push": {
       "SENDER_ID": "602233247386",
       "PACKAGE_NAME": "lznk.jejak.asnaf4"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "lznk.jejak.asnaf4"
     }
   },
   "dependent_plugins": {}

@@ -11,6 +11,10 @@
             {
               "xml": "<DeviceCapability Name=\"webcam\" />",
               "count": 1
+            },
+            {
+              "xml": "<DeviceCapability Name=\"location\" />",
+              "count": 1
             }
           ]
         }
@@ -21,6 +25,10 @@
             {
               "xml": "<DeviceCapability Name=\"webcam\" />",
               "count": 1
+            },
+            {
+              "xml": "<DeviceCapability Name=\"location\" />",
+              "count": 1
             }
           ]
         }
@@ -30,6 +38,10 @@
           "/Package/Capabilities": [
             {
               "xml": "<DeviceCapability Name=\"webcam\" />",
+              "count": 1
+            },
+            {
+              "xml": "<DeviceCapability Name=\"location\" />",
               "count": 1
             }
           ]
@@ -62,6 +74,9 @@
     },
     "phonegap-plugin-push": {
       "SENDER_ID": "602233247386",
+      "PACKAGE_NAME": "Jejak Asnaf"
+    },
+    "cordova-plugin-geolocation": {
       "PACKAGE_NAME": "Jejak Asnaf"
     }
   },
@@ -299,6 +314,44 @@
       "merges": [
         ""
       ]
+    },
+    {
+      "id": "cordova-plugin-geolocation.GeolocationProxy",
+      "file": "plugins/cordova-plugin-geolocation/src/windows/GeolocationProxy.js",
+      "pluginId": "cordova-plugin-geolocation",
+      "runs": true
+    },
+    {
+      "id": "cordova-plugin-geolocation.Coordinates",
+      "file": "plugins/cordova-plugin-geolocation/www/Coordinates.js",
+      "pluginId": "cordova-plugin-geolocation",
+      "clobbers": [
+        "Coordinates"
+      ]
+    },
+    {
+      "id": "cordova-plugin-geolocation.PositionError",
+      "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
+      "pluginId": "cordova-plugin-geolocation",
+      "clobbers": [
+        "PositionError"
+      ]
+    },
+    {
+      "id": "cordova-plugin-geolocation.Position",
+      "file": "plugins/cordova-plugin-geolocation/www/Position.js",
+      "pluginId": "cordova-plugin-geolocation",
+      "clobbers": [
+        "Position"
+      ]
+    },
+    {
+      "id": "cordova-plugin-geolocation.geolocation",
+      "file": "plugins/cordova-plugin-geolocation/www/geolocation.js",
+      "pluginId": "cordova-plugin-geolocation",
+      "clobbers": [
+        "navigator.geolocation"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -306,6 +359,7 @@
     "cordova-plugin-file": "6.0.1",
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-whitelist": "1.3.3",
-    "phonegap-plugin-push": "1.8.4"
+    "phonegap-plugin-push": "1.8.4",
+    "cordova-plugin-geolocation": "4.0.1"
   }
 }
